@@ -1,0 +1,15 @@
+# Données brutes NHANES (lourdes, téléchargeables sur le site CDC)
+*.xpt
+
+# Environnement virtuel Python
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Fichiers Windows
+*:Zone.Identifier
+
+# Modèle sérialisé (généré par train_models.py)
+models/model.pkl
