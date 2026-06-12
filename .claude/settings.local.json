@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl -e bash -c \"cat /tmp/api.log 2>/dev/null; echo '---'; curl -s http://localhost:8000/health 2>/dev/null || echo 'not reachable'\")"
+    ]
+  }
+}

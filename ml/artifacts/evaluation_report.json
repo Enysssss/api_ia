@@ -1,0 +1,46 @@
+{
+  "accuracy": 0.87,
+  "f1_macro": 0.8609,
+  "f1_weighted": 0.8609,
+  "auc_roc": 0.945,
+  "cv_f1_macro": 0.8418,
+  "cv_f1_std": 0.0079,
+  "per_class": {
+    "amelioration_cardio": {
+      "precision": 0.7778,
+      "recall": 0.5224,
+      "f1-score": 0.625,
+      "support": 67
+    },
+    "maintien_bien_etre": {
+      "precision": 0.8333,
+      "recall": 0.7627,
+      "f1-score": 0.7965,
+      "support": 59
+    },
+    "perte_poids_confirme": {
+      "precision": 0.9333,
+      "recall": 0.9333,
+      "f1-score": 0.9333,
+      "support": 30
+    },
+    "perte_poids_debutant": {
+      "precision": 0.8854,
+      "recall": 0.977,
+      "f1-score": 0.929,
+      "support": 87
+    },
+    "prise_masse_confirme": {
+      "precision": 0.8571,
+      "recall": 0.9796,
+      "f1-score": 0.9143,
+      "support": 98
+    },
+    "prise_masse_debutant": {
+      "precision": 0.9365,
+      "recall": 1.0,
+      "f1-score": 0.9672,
+      "support": 59
+    }
+  }
+}

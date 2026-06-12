@@ -5,17 +5,13 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Dataset + script d'entraînement
-COPY dataset_fitness_ml.csv .
-COPY train_models.py .
-
-# Entraîne le modèle pendant le build → models/ généré dans l'image
-RUN python train_models.py
-
-# Code de l'API
-COPY app/ ./app/
+COPY . .
 
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+
+# Générer le dataset synthétique + entraîner les modèles au build
+RUN python ml/data/generate_dataset.py && \
+    python ml/src/training/train.py
 
 EXPOSE 8000
 

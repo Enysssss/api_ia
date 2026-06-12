@@ -1,0 +1,23 @@
+artifact_path: /home/enys/2MPR/mlruns/1/models/m-cba2853daa494208824ca8479b35ed2d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-cba2853daa494208824ca8479b35ed2d
+model_size_bytes: 762615
+model_uuid: m-cba2853daa494208824ca8479b35ed2d
+prompts: null
+run_id: 734a87252eca44dba072c8a2dcfc9fa3
+utc_time_created: '2026-06-11 20:18:15.714751'

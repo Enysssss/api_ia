@@ -1,15 +1,32 @@
-# Données brutes NHANES (lourdes, téléchargeables sur le site CDC)
-*.xpt
-
-# Environnement virtuel Python
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 .venv/
 
-# Cache Python
-__pycache__/
-*.pyc
-
-# Fichiers Windows
+# Windows
 *:Zone.Identifier
 
-# Modèle sérialisé (généré par train_models.py)
-models/model.pkl
+# Modèles entraînés (volumineux, regénérés via train.py)
+ml/models/*.pkl
+
+# MLflow database
+ml/artifacts/mlflow.db
+ml/artifacts/mlruns/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Dataset généré (regénéré via generate_dataset.py)
+ml/data/processed/healthai_dataset.csv
+
+# Artifacts plots
+ml/artifacts/*.png
+
+# Environnement
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
