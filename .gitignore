@@ -10,9 +10,10 @@ __pycache__/
 # Modèles entraînés (volumineux, regénérés via train.py)
 ml/models/*.pkl
 
-# MLflow database
+# MLflow database et tracking
 ml/artifacts/mlflow.db
 ml/artifacts/mlruns/
+mlruns/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
