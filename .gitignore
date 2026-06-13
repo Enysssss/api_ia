@@ -20,8 +20,7 @@ ml/artifacts/mlruns/
 # Dataset généré (regénéré via generate_dataset.py)
 ml/data/processed/healthai_dataset.csv
 
-# Artifacts plots
-ml/artifacts/*.png
+# Artifacts plots (trackés pour le site de documentation)
 
 # Environnement
 .env
